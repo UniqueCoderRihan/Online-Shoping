@@ -1,6 +1,9 @@
+let serial = 0;
 // frist cart
 
 document.getElementById('frist-card').addEventListener('click', function(){
+    // serial 
+    serial += 1;
     // get the data from html using id.
     const productName = document.getElementById('frist-name').innerText;
     const productPrice = document.getElementById('frist-price').innerText;
@@ -18,6 +21,8 @@ document.getElementById('frist-card').addEventListener('click', function(){
 // 2nd Card
 
 document.getElementById('secound-card').addEventListener('click', function(e){
+    // serial
+    serial += 1;
     const pName = e.target.parentNode.parentNode.children[0].innerText;
     const pPrice = e.target.parentNode.parentNode.children[2].children[0].innerText;
     const pQuantity = e.target.parentNode.parentNode.children[3].children[0].innerText;
@@ -43,7 +48,7 @@ function displayData(pN, pP,pQ, pT){
    
     const tr = document.createElement('tr');
     tr.innerHTML = `
-        <td>${1}</td>
+        <td>${serial}</td>
         <td>${pN}</td>
         <td>${pP}</td>
         <td>${pQ}</td>
