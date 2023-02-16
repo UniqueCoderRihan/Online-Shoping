@@ -48,12 +48,12 @@
                 <div class="card card-compact w-full bg-base-100 shadow-xl">
                     <figure><img class="w-full h-40 " src="./img/coffee.jpg"></figure>
                     <div class="card-body">
-                        <h2 class="card-title">Coffee Js</h2>
+                        <h2 class="card-title" id="frist-name">Coffee Js</h2>
                         <p>Coffee Khile Aste paro eikhane vlo vlo coffe powa jai.</p>
-                        <p>Price $<span>110</span></p>
-                        <p>Quantity <span>1</span></p>
+                        <p>Price $<span id="frist-price">110</span></p>
+                        <p>Quantity <span id="frist-quantity">1</span></p>
                         <div class="card-actions justify-end">
-                            <button class="btn btn-primary">Add To Cart</button>
+                            <button class="btn btn-primary" id="frist-card">Add To Cart</button>
                         </div>
                     </div>
                 </div>
@@ -127,10 +127,10 @@
                           <th>No</th>
                           <th>Name</th>
                           <th>Price</th>
-                          <th>Total</th>
+                          <th>Quantity</th>
                         </tr>
                       </thead>
-                      <tbody>
+                      <tbody id="table-container">
                         <!-- row 1 -->
                         <!-- <tr>
                           <th>1</th>
