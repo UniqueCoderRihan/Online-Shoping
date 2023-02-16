@@ -6,6 +6,9 @@ document.getElementById('frist-card').addEventListener('click', function(){
     const productPrice = document.getElementById('frist-price').innerText;
     const productQuantity = document.getElementById('frist-quantity').innerText;
     // console.log(productName , productPrice , productQuantity);
+
+    const totalPrice = parseInt(productPrice) * parseInt(productQuantity);
+
     const container = document.getElementById('table-container');
    
     const tr = document.createElement('tr');
@@ -14,6 +17,7 @@ document.getElementById('frist-card').addEventListener('click', function(){
         <td>${productName}</td>
         <td>${productPrice}</td>
         <td>${productQuantity}</td>
+        <td>${totalPrice}</td>
     `;
     container.appendChild(tr);
 })
