@@ -8,7 +8,14 @@ document.getElementById('frist-card').addEventListener('click', function(){
     // console.log(productName , productPrice , productQuantity);
 
     const totalPrice = parseInt(productPrice) * parseInt(productQuantity);
+    
+    // show the data  
+    displayData(productName, productPrice, productQuantity, totalPrice)
+})
 
+function displayData(productName, productPrice,productQuantity, totalPrice){
+    // ekto chek kore dekteci
+    console.log('Called');
     const container = document.getElementById('table-container');
    
     const tr = document.createElement('tr');
@@ -20,4 +27,4 @@ document.getElementById('frist-card').addEventListener('click', function(){
         <td>${totalPrice}</td>
     `;
     container.appendChild(tr);
-})
+}
