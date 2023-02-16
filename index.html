@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,50 +9,112 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body>
     <header>
         <div class="navbar bg-base-100 shadow-2xl lg:px-12">
             <div class="flex-1">
-              <a class="btn btn-ghost normal-case text-xl">Online-Shoping</a>
+                <a class="btn btn-ghost normal-case text-xl">Online-Shoping</a>
             </div>
             <div class="flex-none gap-2">
-              <div class="form-control">
-                <input type="text" placeholder="Search" class="input input-bordered" />
-              </div>
-              <div class="dropdown dropdown-end">
-                <label tabindex="0" class="btn btn-ghost btn-circle avatar">
-                  <div class="w-10 rounded-full">
-                    <img src="https://picsum.photos/200/300" />
-                  </div>
-                </label>
-                <ul tabindex="0" class="mt-3 p-2 shadow menu menu-compact dropdown-content bg-base-100 rounded-box w-52">
-                  <li>
-                    <a class="justify-between">
-                      Profile
-                      <span class="badge">New</span>
-                    </a>
-                  </li>
-                  <li><a>Settings</a></li>
-                  <li><a>Logout</a></li>
-                </ul>
-              </div>
+                <div class="form-control">
+                    <input type="text" placeholder="Search" class="input input-bordered" />
+                </div>
+                <div class="dropdown dropdown-end">
+                    <label tabindex="0" class="btn btn-ghost btn-circle avatar">
+                        <div class="w-10 rounded-full">
+                            <img src="https://picsum.photos/200/300" />
+                        </div>
+                    </label>
+                    <ul tabindex="0"
+                        class="mt-3 p-2 shadow menu menu-compact dropdown-content bg-base-100 rounded-box w-52">
+                        <li>
+                            <a class="justify-between">
+                                Profile
+                                <span class="badge">New</span>
+                            </a>
+                        </li>
+                        <li><a>Settings</a></li>
+                        <li><a>Logout</a></li>
+                    </ul>
+                </div>
             </div>
-          </div>
+        </div>
     </header>
     <!-- this main aria -->
     <main>
-        <section>
-            <div class="products-details">
-                <div class="card card-compact w-96 bg-base-100 shadow-xl">
-                    <figure><img src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
+        <section class="lg:px-12">
+            <div class="products-details w-[70%]  mt-5 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="card card-compact w-full bg-base-100 shadow-xl">
+                    <figure><img class="w-full h-40 " src="./img/coffee.jpg"></figure>
                     <div class="card-body">
-                      <h2 class="card-title">Shoes!</h2>
-                      <p>If a dog chews shoes whose shoes does he choose?</p>
-                      <div class="card-actions justify-end">
-                        <button class="btn btn-primary">Buy Now</button>
-                      </div>
+                        <h2 class="card-title">Coffee Js</h2>
+                        <p>Coffee Khile Aste paro eikhane vlo vlo coffe powa jai.</p>
+                        <p>Price $<span>110</span></p>
+                        <p>Quantity <span>1</span></p>
+                        <div class="card-actions justify-end">
+                            <button class="btn btn-primary">Add To Cart</button>
+                        </div>
                     </div>
-                  </div>
+                </div>
+                <div class="card card-compact w-full bg-base-100 shadow-xl">
+                    <figure><img class="w-full h-40 " src="./img/heart_js.jpg"></figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Heart Js</h2>
+                        <p>Coffee Khile Aste paro eikhane vlo vlo coffe powa jai.</p>
+                        <p>Price $<span>210</span></p>
+                        <p>Quantity :<span>1</span></p>
+                        <div class="card-actions justify-end">
+                            <button class="btn btn-primary">Add To Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-compact w-full bg-base-100 shadow-xl">
+                    <figure><img class="w-full h-40 " src="./img/panda.png"></figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Panda Js</h2>
+                        <p>Coffee Khile Aste paro eikhane vlo vlo coffe powa jai.</p>
+                        <p>Price $<span>310</span></p>
+                        <p>Quantity <span>4</span></p>
+                        <div class="card-actions justify-end">
+                            <button class="btn btn-primary">Add To Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-compact w-full bg-base-100 shadow-xl">
+                    <figure><img class="w-full h-40 " src="./img/umbrella.png"></figure>
+                    <div class="card-body">
+                        <h2 class="card-title">umbrella Js</h2>
+                        <p>Coffee Khile Aste paro eikhane vlo vlo coffe powa jai.</p>
+                        <p>Price $<span>310</span></p>
+                        <p>Quantity <span>4</span></p>
+                        <div class="card-actions justify-end">
+                            <button class="btn btn-primary">Add To Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-compact w-full bg-base-100 shadow-xl">
+                    <figure><img class="w-full h-40 " src="./img/vue-js.jpg"></figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Vue Js</h2>
+                        <p>Coffee Khile Aste paro eikhane vlo vlo coffe powa jai.</p>
+                        <!-- <p>Price $<span>310</span></p>
+                      <p>Quantity <span>4</span></p> -->
+                        <input 
+                            type="text" 
+                            placeholder="Price" 
+                            class="input input-bordered w-full max-w-xs" 
+                        />
+                        <input 
+                            type="text" 
+                            placeholder="Quantity" 
+                            class="input input-bordered w-full max-w-xs" 
+                        />
+                        <div class="card-actions justify-end">
+                            <button class="btn btn-primary">Add To Cart</button>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="cart-details"></div>
         </section>
@@ -60,4 +123,5 @@
     <!-- Js link -->
     <script src="./main.js"></script>
 </body>
+
 </html>
