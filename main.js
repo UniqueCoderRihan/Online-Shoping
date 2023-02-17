@@ -96,8 +96,15 @@ document.getElementById('fifth-btn').addEventListener('click',function(){
     fifthProductQuantityElement.value = '';
 
 
+    
+    // validation 
+   if(fifthProductsTotal >=0){
     // Now Call the Function for show the Value On Website
     displayData(fifthProductName, fifthProductPrice, fifthProductQuantity,fifthProductsTotal);
+   }
+   else{
+    alert('Your Input Is Not A Number Type. Make Sure Again , Must You Need To Give Number Type Input. ThankYou .')
+   }
     // console.log(fifthProductsTotal);
     // console.log(typeof(fifthProductQuantity));
     // console.log(fifthProductPrice);
