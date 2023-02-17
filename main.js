@@ -39,7 +39,44 @@ document.getElementById('secound-card').addEventListener('click', function(e){
 
 // 3rd Card
 
+document.getElementById('third-btn').addEventListener('click', function(e){
+    // serial
+    serial += 1;
+    // get the element using ParentNode
+    const thridProductName = e.target.parentNode.parentNode.children[0].innerText;
+    const thridProductPrice = e.target.parentNode.parentNode.children[2].children[0].innerText;
+    const thridProductQuantity = e.target.parentNode.parentNode.children[3].children[0].innerText;
 
+    // Now Calculete with formula,Like This: sum, Minus,Multipication etc
+    const thridProductTotal = parseInt(thridProductPrice) * parseInt(thridProductQuantity);
+
+    // now Call the function and give The Value.
+    
+    displayData(thridProductName, thridProductPrice, thridProductQuantity, thridProductTotal);
+    
+    // console.log(thridProductQuantity);
+})
+
+// forth card
+// {done The Work useing Handaler by The ELement Id}
+document.getElementById('forth-btn').addEventListener('click',function(e){
+    // serial
+    serial +=1;
+    // find the element using nodeParent
+    const forthProductName = e.target.parentNode.parentNode.children[0].innerText;
+    const forthProductPrice = e.target.parentNode.parentNode.children[2].children[0].innerText;
+    const forthProductQuantity = e.target.parentNode.parentNode.children[3].children[0].innerText;
+    // console.log(forthProductPrice);
+    // console.log(forthProductName);
+    // console.log(forthProductQuantity);
+
+    // If You have A condition about calculetion the you will did . but now I calculete Minus
+
+    const forthProductsTotal = parseInt(forthProductPrice) - parseInt(forthProductQuantity);
+
+    // Call The Function For Return the Value .
+    displayData(forthProductName,forthProductPrice, forthProductQuantity, forthProductsTotal);
+})
 
 // common function to display data.
 
