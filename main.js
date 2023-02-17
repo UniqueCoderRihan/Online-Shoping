@@ -78,6 +78,34 @@ document.getElementById('forth-btn').addEventListener('click',function(e){
     displayData(forthProductName,forthProductPrice, forthProductQuantity, forthProductsTotal);
 })
 
+// fifth-card
+
+// Set the Handaler Using Id
+document.getElementById('fifth-btn').addEventListener('click',function(){
+    // set the  serial
+    serial+=1;
+    const fifthProductName = document.getElementById('fifthProduct-Name').innerText;
+    const fifthProductPriceElement = document.getElementById('fifthProduct-price');
+    const fifthProductQuantityElement = document.getElementById('fifthProduct-quantity');
+    const fifthProductPrice = fifthProductPriceElement.value;
+    const fifthProductQuantity = fifthProductQuantityElement.value;
+    const fifthProductsTotal = parseInt(fifthProductPrice) * parseInt(fifthProductQuantity);
+
+    // clear the input Filed After Calculetion;
+    fifthProductPriceElement.value = '';
+    fifthProductQuantityElement.value = '';
+
+
+    // Now Call the Function for show the Value On Website
+    displayData(fifthProductName, fifthProductPrice, fifthProductQuantity,fifthProductsTotal);
+    // console.log(fifthProductsTotal);
+    // console.log(typeof(fifthProductQuantity));
+    // console.log(fifthProductPrice);
+    // console.log(fifthProductName);
+   
+
+})
+
 // common function to display data.
 
 function displayData(pN, pP,pQ, pT){
